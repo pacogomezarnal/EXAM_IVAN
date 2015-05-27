@@ -1,16 +1,15 @@
 package Model;
 
-//Clase que almacenará todos los datos de un cadete
+//Clase que almacenarï¿½ todos los datos de un cadete
 public class Cadete {
 	//Propiedades
-	private int id=0;
-	private String nombre="";
-	private String apellidos="";
-	private int edad=0; 
-	private String nacionalidad="";
-	private int equipo=0; 
+	private int id;
+	private String nombre;
+	private String apellidos;
+	private int edad; 
+	private String nacionalidad;
+	private int equipo; 
 
-	//Constructores
 	public Cadete() {
 		
 	}
@@ -76,6 +75,10 @@ public class Cadete {
 
 	public void setEquipo(int equipo) {
 		this.equipo = equipo;
+	}
+	
+	public String toString(){
+		return nombre;
 	}
 
 }

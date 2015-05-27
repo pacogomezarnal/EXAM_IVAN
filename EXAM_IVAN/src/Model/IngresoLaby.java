@@ -12,13 +12,14 @@ public class IngresoLaby {
 	private final static String COD_COL="cod";
 	
 	//Conexion
-	private Connection conexion = null;// maneja la conexió
+	private Connection conexion = null;// maneja la conexiï¿½
 	private Statement instruccion = null;
 	private ResultSet conjuntoResultados = null;
 
 	public IngresoLaby() {
 		//Obtenemos la conexion de datos
-		conexion=ConexionDB.getConexion();		
+		ConexionDB con = ConexionDB.getInstance();
+		conexion = con.getConexion();	
 	}
 	
 	public String getCod(int id,String apellido){
